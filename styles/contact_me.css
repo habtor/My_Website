@@ -1,0 +1,96 @@
+/* ===================== Contact Form ==================== */
+.contact_form_all_contaienr {
+    margin: 100px auto;
+    border-radius: 5px;
+    width: 100%;
+    padding: 5px;
+}
+
+/* .contact_heading {
+    text-align: center;
+    background: var(--themes_container_background);
+    font-size: var(--section_heading);
+    border-radius: 5px;
+    font-size: var(--section_heading);
+} */
+
+.contact_form_container1 {
+    padding: 10px;
+}
+
+
+.contact_me_background_container {
+    max-width: 1000px;
+    margin: auto;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px white,
+        -1px -1px 1px white;
+    padding-bottom: 10px;
+    background-color: var(--container_backgound);
+}
+
+.contact_form_container {
+    max-width: 550px;
+    margin: 50px auto 50px auto;
+    background-color: rgb(39, 39, 39);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px white,
+        -1px -1px 1px white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+
+.inputs,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgb(196, 196, 196);
+    border-radius: 2px;
+    margin: 6px 0 16px 0;
+    color: rgb(255, 255, 255);
+    background-color: rgb(70, 70, 70);
+}
+
+.name_subject {
+    display: flex;
+}
+
+.name {
+    margin-right: 20px;
+}
+
+.submit_btn {
+    width: 100%;
+    background-color: rgb(197, 197, 197);
+    color: rgb(0, 0, 0);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 17px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.submit_btn:hover {
+    background-color: rgb(146, 146, 146);
+    color: rgb(255, 255, 255);
+}
+
+/* ====================== Mobile 800px ========================= */
+
+@media (max-width: 810px) {
+
+    .contact_heading {
+        font-size: 25px;
+    }
+
+}
+
+/* ========================== Iphone SE ======================*/
+
+@media (max-width: 510px) {
+    .name_subject {
+        display: inline;
+    }
+}

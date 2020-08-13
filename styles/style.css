@@ -1,0 +1,1858 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+
+:root {
+    --body_background: #000000;
+    --themes_container_background: #1b1b1b;
+    --container_backgound: #292929;
+    --text_color: #ffffff;
+    --line_text_color: #ffffff;
+    --gretting_color: white;
+    --line_color: #000000;
+    --habtor_strokes_color: white;
+    --section_heading: 32px;
+    --my_work_items_color: rgb(61, 61, 61);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--body_background);
+    font-family: 'Abel', monospace;
+    color: rgb(228, 228, 228);
+    transition: 1s;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text_color);
+    transition: 0.2s;
+}
+
+ul {
+    list-style: none;
+}
+
+/* ====================== Show Content ================== */
+
+/* .show_btn_container {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    margin: auto; */
+/* background: url(/1PORTY/Arabian-Desert-at-Night\,-2560x1600.jpg); */
+/* background: black;
+    background-size: cover;
+    z-index: 1000;
+    clip-path: circle(100px at var(--x) var(--y));
+    justify-content: center;
+} */
+/* 
+button {
+    color: blue;
+    margin-left: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.show_btn_container button {
+    visibility: hidden;
+}
+
+.show_btn_container:hover button {
+    visibility: visible;
+
+}
+
+.show_btn_container:hover {
+    background-color: cornsilk;
+}
+
+.show_hide {
+    visibility: hidden;
+}
+
+.Back {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    background-size: cover;
+    z-index: 100;
+} */
+
+
+
+/* ====================== Container ===================== */
+
+.container {
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+    padding: 50px 5px 3px;
+    transition: 0.3s;
+    border-radius: 5px;
+    overflow: hidden;
+
+}
+
+/* ========= Background Div ========= */
+
+.container_background {
+    position: relative;
+    background-color: var(--container_backgound);
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px rgb(255, 255, 255),
+        -1px -1px 1px rgb(255, 255, 255);
+    transition: 1s;
+    width: 100%;
+    height: 100%;
+}
+
+/* ========= Toggle Size Green_Btn ========= */
+
+.conainer_sz {
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 5px;
+    transition: 0.3s;
+    height: 100vh;
+}
+
+/* ======================== Nav Container ================== */
+.styky_container {
+    margin: 0px auto;
+    width: 100%;
+    position: fixed;
+    top: -50px;
+    width: 100%;
+    transition: top 1.5s;
+    z-index: 10;
+}
+
+.sticky_nav {
+    box-sizing: border-box;
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--body_background);
+    margin: auto;
+    height: 40px;
+    width: 100%;
+    align-items: center;
+    transition: 1s;
+    box-shadow: 1px 1px 2px white,
+        -1px -1px 2px white;
+    z-index: 100000000;
+}
+
+.nav {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--body_background);
+    border-radius: 5px;
+    height: 40px;
+    width: 100%;
+    align-items: center;
+    transition: 1s;
+    box-shadow: 1px 1px 2px white,
+        -1px -1px 2px white;
+}
+
+/* ========= Toggle Nav (shrink & links) Green_Btn ========= */
+
+.shrink_nav {
+    width: 106px;
+}
+
+.shrink_sticky_nav {
+    width: 99.7%;
+    
+}
+
+
+
+/* @keyframes mymove {
+    0%   {opacity: 0;}
+    25%  {opacity: 0;}
+    75%  {opacity: 0;}
+    100% {opacity: 1;}
+  } */
+
+/* ================ Dots ====================== */
+
+.dots {
+    display: flex;
+}
+
+.dots_style {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+
+}
+
+.dot1 {
+    background-color: #da4622;
+    animation: orange_dot_color 2s linear infinite;
+}
+
+.dot1:hover {
+    background: url(https://image.flaticon.com/icons/svg/1665/1665581.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.5s;
+    background-color: #ff3300;
+}
+
+/* @keyframes orange_dot_color {
+    0% {
+        background-color: #962306;
+    }
+
+    50% {
+        background-color: #ff3300;
+    }
+
+    100% {
+        background-color: #962306;
+    }
+} */
+
+.dot2 {
+    background-color: #fc9f00;
+    animation: yellow_dot_color 2s linear infinite;
+}
+
+.dot2:hover {
+    background: url(https://image.flaticon.com/icons/svg/1665/1665604.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.5s;
+    background-color: #f4f800;
+}
+
+/* @keyframes yellow_dot_color {
+    0% {
+        background-color: #af740f;
+    }
+
+    50% {
+        background-color: #fc9f00;
+    }
+
+    100% {
+        background-color: #af740f;
+    }
+} */
+
+.dot3 {
+    background-color: #0F9033;
+    animation: green_dot_color 2s linear infinite;
+}
+
+.dot3:hover {
+    /* background: url(https://image.flaticon.com/icons/png/512/107/107738.png); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.5s;
+    background-color: #0ecf45;
+}
+
+/* @keyframes green_dot_color {
+    0% {
+        background-color: #14a83e;
+    }
+
+    50% {
+        background-color: #1adb1a;
+    }
+
+    100% {
+        background-color: #0c9e36;
+    }
+} */
+
+/* ======== Orange & Yellow Dots animation ======== */
+
+.dot1_back {
+    transform: rotateY(180deg);
+}
+
+.dot2_back {
+    transform: rotateX(180deg);
+}
+
+/* ========================== Sticky Nav Dots =============== */
+
+.sticky_dots {
+    display: flex;
+}
+
+.sticky_dots_style {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin: 5px;
+    transition: 0.2s;
+}
+
+.sticky_dot1 {
+    background-color: #da4622;
+    animation: orange_dot_color 2s linear infinite;
+}
+
+.sticky_dot2 {
+    background-color: #fc9f00;
+    animation: yellow_dot_color 2s linear infinite;
+}
+
+.sticky_dot3 {
+    background-color: #0F9033;
+    animation: green_dot_color 2s linear infinite;
+}
+
+/* =========================== Sticky Nav Links ===================== */
+
+.stiky_links {
+    margin: 0px;
+    font-size: 25px;
+    visibility: visible;
+}
+
+.stiky_links ul {
+    display: flex;
+    margin-right: 12px;
+}
+
+.stiky_links ul li {
+    margin-left: 35px;
+    font-family: 'VT323', Times, serif;
+
+
+}
+
+.stiky_links ul li a:hover {
+    color: rgb(207, 204, 204);
+    transition: 0.3s;
+
+}
+
+.hide_sticky_links {
+    visibility: visible;
+    /* animation: mymove 1s infinite; */
+}
+
+
+
+/* =========================== Nav Links ===================== */
+
+.humberger_div {
+    display: none;
+}
+
+.nav_links {
+    display: none;
+}
+
+.links {
+    margin: 0px;
+    font-size: 25px;
+    visibility: visible;
+}
+
+.links ul {
+    display: flex;
+    margin-right: 12px;
+}
+
+.links ul li {
+    margin-left: 35px;
+    font-family: 'VT323', Times, serif;
+
+
+}
+
+.links ul li a:hover {
+    color: rgb(207, 204, 204);
+    transition: 0.3s;
+
+}
+
+.hide_links {
+    visibility: hidden;
+    /* animation: mymove 1s infinite; */
+}
+
+
+
+
+
+
+/* ========================= Themes =========================== */
+
+.theme_continer {
+    display: flex;
+    background-color: var(--themes_container_background);
+    width: 99.8%;
+    height: 60px;
+    border-radius: 5px;
+    margin: 2px auto;
+    opacity: 1;
+    align-items: center;
+    justify-content: center;
+    transition: 1s;
+    visibility: visible;
+}
+
+/* ======= Themes Hide or Show ======= */
+
+.theme_show_hide {
+    height: 0px;
+    transition: 1s;
+    visibility: hidden;
+}
+
+.themes_title {
+    color: var(--text_color);
+    transition: 1s;
+    font-size: 23px;
+}
+
+/* ====== Toggle ====== */
+
+.hide_title {
+    font-size: 1px;
+}
+
+.themes {
+    padding: 10px;
+    display: flex;
+}
+
+.theme_circles {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 12px;
+    transition: 1s;
+}
+
+/* ====== Toggle ===== */
+
+.circles_size {
+    width: 1px;
+    height: 1px;
+}
+
+.circle_1 {
+    background-color: #fcac00;
+}
+
+.circle_2 {
+    background-color: rgb(0, 185, 0);
+}
+
+.circle_3 {
+    background-color: #00d9ff;
+}
+
+.circle_4 {
+    background-color: brown;
+}
+
+.circle_5 {
+    background-color: purple;
+}
+
+.circle_6 {
+    background-color: white;
+}
+
+.circle_7 {
+    background-color: rgb(61, 60, 60);
+}
+
+.theme_circles:hover {
+    transition: 0.3s;
+    border: 5px solid rgb(255, 255, 255);
+}
+
+.circle_6:hover {
+    border: 5px solid rgb(0, 0, 0);
+}
+
+
+/* =========================== Content ======================= */
+
+.content {
+    position: relative;
+    width: 850px;
+    margin: 50px auto;
+    text-align: center;
+    z-index: 0;
+    transition: 1s;
+}
+
+.my_img img {
+    width: 300px;
+}
+
+.my_img {
+    position: relative;
+    margin: 0 auto 0px;
+    width: 305px;
+    z-index: 1;
+    background-image: url(https://image.flaticon.com/icons/svg/175/175067.svg);
+}
+
+/*  =============== img Gloing Borders ====================*/
+.my_img::before,
+.my_img::after {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -3px;
+    background: linear-gradient(45deg, #ffffff, #000000, #ffffff, #313131, #ffffff, #806f6f);
+    background-size: 400%;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    z-index: 2000000;
+    z-index: -1;
+    animation: anim 20s linear infinite;
+}
+
+.my_img::after {
+    filter: blur(10px);
+}
+
+@keyframes anim {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 300% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+/*  =============== img Gloing Borders (End) ====================*/
+
+/* .content:hover {
+    padding-right: 300px;
+} */
+
+
+
+.greeting {
+    color: var(--gretting_color);
+    font-family: 'Source Sans Pro', sans-serif;
+    position: absolute;
+    left: 300px;
+    top: 100px;
+    text-align: left;
+    font-weight: 500;
+    z-index: -1;
+    transition: 1s;
+    opacity: 0;
+}
+
+.section__title--intro {
+    font-weight: var(--fw-reg);
+    font-size: 70px;
+}
+
+.section__title--intro strong {
+    display: block;
+}
+
+/* .content:hover .greeting {
+    left: 500px;
+    opacity: 1;
+} */
+
+
+
+/* =============================  SVG ===================================== */
+
+.logo {
+    position: absolute;
+    top: 106px;
+    left: 5px;
+    /* animation: fill 0.9s ease forwards 4.5s; */
+
+}
+
+.logo1 {
+    display: none;
+}
+
+
+/* #path-1-outside-1 {
+    animation: fill 0.9s ease forwards 4.5s;
+} */
+
+
+
+.logo path:nth-child(2) {
+    stroke-dasharray: 209px;
+    stroke-dashoffset: 209px;
+    animation: line_anime 8s ease infinite;
+    stroke: rgb(0, 255, 64);
+    /* animation: ff 2s 3; */
+}
+
+.logo path:nth-child(3) {
+    stroke-dasharray: 196px;
+    stroke-dashoffset: 196px;
+    animation: line_anime 7s ease infinite 0.3s;
+    stroke: rgb(0, 255, 234);
+}
+
+.logo path:nth-child(4) {
+    stroke-dasharray: 115px;
+    stroke-dashoffset: 115px;
+    animation: line_anime 6s ease infinite 0.6s;
+    stroke: rgb(255, 0, 0);
+}
+
+.logo path:nth-child(5) {
+    stroke-dasharray: 196px;
+    stroke-dashoffset: 196px;
+    animation: line_anime 5s ease infinite 0.9s;
+    stroke: rgb(212, 0, 255);
+}
+
+.logo path:nth-child(6) {
+    stroke-dasharray: 210px;
+    stroke-dashoffset: 210px;
+    animation: line_anime 4s ease infinite 1.2s;
+    stroke: rgb(255, 251, 0);
+}
+
+.logo path:nth-child(7) {
+    stroke-dasharray: 239px;
+    stroke-dashoffset: 0px;
+    animation: ff 2s ease infinite 1s;
+    stroke: rgb(141, 130, 130);
+}
+
+.logo path:nth-child(8) {
+    stroke-dasharray: 196px;
+    stroke-dashoffset: 0px;
+    animation: ff 2s ease infinite 1s;
+    stroke: rgb(141, 130, 130);
+}
+
+.logo path:nth-child(9) {
+    stroke-dasharray: 231px;
+    stroke-dashoffset: 0px;
+    animation: ff 2s ease infinite 1s;
+    stroke: rgb(141, 130, 130);
+}
+
+.logo path:nth-child(10) {
+    stroke-dasharray: 141px;
+    stroke-dashoffset: 0px;
+    animation: ff 2s ease infinite 1s;
+    stroke: rgb(141, 130, 130);
+}
+
+.logo path:nth-child(11) {
+    stroke-dasharray: 179px;
+    stroke-dashoffset: 0px;
+    animation: ff 1.5s ease infinite 1s;
+    stroke: rgb(141, 130, 130);
+}
+
+.logo path:nth-child(12) {
+    stroke-dasharray: 179px;
+    stroke-dashoffset: 0px;
+    animation: ff 2s ease infinite 1s;
+    stroke: rgb(141, 130, 130);
+    /* stroke: rgb(141, 130, 130); */
+}
+
+
+
+
+@keyframes line_anime {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes fill {
+    from {
+        fill: transparent;
+    }
+
+    to {
+        fill: rgb(255, 255, 255);
+    }
+}
+
+@keyframes ff {
+    0% {
+        stroke: var(--habtor_strokes_color);
+
+    }
+
+    1% {
+        stroke: var(--habtor_strokes_color);
+
+    }
+
+    10% {
+        stroke: gray;
+    }
+
+    20% {
+        stroke: var(--habtor_strokes_color);
+    }
+
+    21% {
+        stroke: var(--habtor_strokes_color);
+    }
+
+    22% {
+        stroke: gray;
+    }
+
+    60% {
+        stroke: gray;
+    }
+
+    61% {
+        stroke: var(--habtor_strokes_color);
+    }
+
+    100% {
+        stroke: var(--habtor_strokes_color);
+    }
+}
+
+/* ===================== SVG (End) ================= */
+
+.line {
+    position: absolute;
+    left: 300px;
+    top: 400px;
+    width: 250px;
+    height: 50px;
+    text-align: end;
+    border-radius: 3px;
+    color: var(--line_text_color);
+    font-size: larger;
+    background-color: var(--line_color);
+    opacity: 0;
+    transition: 1s;
+    z-index: -1;
+    padding: 13px;
+    margin-top: 10px;
+}
+
+/* .content:hover .line {
+    width: 700px;
+    left: 80px;
+    opacity: 1;
+} */
+
+.padding_content {
+    padding-right: 300px;
+}
+
+.move_greeting {
+    left: 500px;
+    opacity: 1;
+}
+
+.expand_line {
+    width: 700px;
+    left: 80px;
+    opacity: 1;
+}
+
+
+/* ============================= Content Show Button ====================== */
+
+/* ================= Power-Off Btn ============ */
+
+.btn_div {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+label {
+    margin: -30px auto 35px;
+}
+
+label .btn {
+    position: relative;
+    margin: auto;
+    display: block;
+    width: 80px;
+    height: 80px;
+    background: #1b1b1b;
+    border-radius: 50%;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 1),
+        inset 0 -2px 5px rgba(0, 0, 0, 1),
+        inset 0 2px 2px rgba(255, 255, 522, 0.5),
+        0 0 0 2px #000,
+        0 0 0 5px #0c0c0c,
+        0 0 0 5.5px #080808;
+    cursor: pointer;
+}
+
+label input[type="checkbox"]:checked~.btn {
+    box-shadow: 0 0 0 rgba(0, 0, 0, 1),
+        inset 0 -2px 5px rgba(0, 0, 0, 1),
+        inset 0 1px 1px rgba(255, 255, 522, 0.1),
+        0 0 0 2px #000,
+        0 0 0 5px #0c0c0c,
+        0 0 0 8px #fff;
+}
+
+label input[type="checkbox"] {
+    -webkit-appearance: none;
+}
+
+label .fas {
+    position: relative;
+    border-radius: 155px;
+    font-size: 2.8em;
+    margin-top: 23%;
+    color: #303030;
+}
+
+label input[type="checkbox"]:checked~.btn .fas {
+    color: #fff;
+    text-shadow: 0 0 15px rgb(158, 158, 158);
+}
+
+
+
+/* ================= Power-Off Btn (END) ============ */
+
+
+/* ================= Loader Btn ===================== */
+/* .btn_container {
+    margin: 50px auto;
+    width: 200px;
+    height: 100px;
+    align-self: center;
+    z-index: 1;
+}
+
+.loader {
+    position: relative;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(#ffeb3b, #ff00e0, #14ffe9, #ffeb3b, #ff00e0, #14ffe9);
+    animation: animate 0.35s linear infinite;
+    cursor: pointer;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loader span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#14ffe9, #ff00e0, #ffeb3b, #ffeb3b, #ff00e0, #14ffe9);
+}
+
+.loader span:nth-child(1) {
+    filter: blur(5px);
+}
+
+.loader span:nth-child(2) {
+    filter: blur(5px);
+}
+
+.loader span:nth-child(3) {
+    filter: blur(5px);
+}
+
+.loader span:nth-child(4) {
+    filter: blur(5px);
+}
+
+.loader::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    background-color: #29212F;
+    border-radius: 50%;
+} */
+/* ================= Loader Btn (END) ===================== */
+
+
+/* ================================ Curtains ================================ */
+
+div#theatre {
+    /* border: inset red 10px; */
+    height: 100vh;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    line-height: 120px;
+    font-size: 30px;
+    position: absolute;
+    overflow: hidden;
+    /* background: black; */
+    /* color: rgba(255, 255, 255, 0.3);
+    text-shadow: 0 0 2px yellow, 0 0 4px black, 0 0 6px white; */
+}
+
+div#theatre #curtain-left,
+div#theatre #curtain-right {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    bottom: 0px;
+    width: 60%;
+    transition: all 1s ease-out;
+    /* transform: rotate(0deg); */
+    background-color: #000000;
+    /* background-image: linear-gradient(90deg, transparent 10%, rgba(255, 255, 255, .25) 50%, transparent 65%);
+    background-repeat: repeat;
+    box-shadow: 0 0 10px #555, inset 0 -60px 60px -30px rgba(255, 255, 255, 0.5), inset 0 90px 60px -30px rgba(0, 0, 0, 0.5);
+    background-size: 80px; */
+}
+
+#curtain-left {
+    left: -10%;
+    border-right: 1px solid white;
+}
+
+#curtain-right {
+    right: -10%;
+    border-left: 1px solid white;
+}
+
+div#theatre:hover #curtain-right,
+div#theatre:hover #curtain-left {
+    width: 0;
+    background-size: 1px;
+    transition: all 1s ease;
+    /* transform: rotate(15deg); */
+}
+
+/* div#theatre:hover #curtain-right {
+    transition: all 1s ease;
+    transform: rotate(-15deg);
+} */
+
+/* #theatre p {
+    width: 50%;
+    margin: 0.5em auto;
+    position: relative;
+    z-index: 3;
+}
+
+#theatre p:first-of-type:before {
+    content: '';
+    position: absolute;
+    border-radius: 150px;
+    box-shadow: 0 0 10px 70px rgba(255, 255, 255, 0.4);
+    height: 0.1px;
+    width: 3px;
+    top: 6.5em;
+    left: 49%;
+    transform: rotate(25deg) skew(15deg, 5deg);
+} */
+
+
+
+
+
+/* ================================= Contact Me ==================================
+===================================================================================
+================================================================================== */
+
+
+
+
+
+
+
+
+
+
+
+/* ================================= Contact Me (End) ==================================
+===================================================================================
+================================================================================== */
+
+
+
+
+
+/* ====================== Mobile (Tablet) ( 810px - 510px) ================================ */
+
+@media (max-width: 810px) {
+    /* =========================== Content ======================= */
+
+    .content {
+        position: relative;
+        margin: 50px auto;
+        width: 100%;
+        text-align: center;
+        z-index: 0;
+        transition: 1s;
+
+    }
+
+    .my_img img {
+        width: 200px;
+    }
+
+    .my_img {
+        position: relative;
+        margin: auto;
+        width: 205px;
+        z-index: 1;
+        background-image: url(https://image.flaticon.com/icons/svg/175/175067.svg);
+    }
+
+    /* ==================== nav =================== */
+
+    .nav {
+        height: 30px;
+    }
+
+    .sticky_nav {
+
+        height: 30px;
+
+    }
+
+    /* =========== nav dots */
+
+    .dots_style {
+        width: 20px;
+        height: 20px;
+    }
+
+    /*  ========== links ====== */
+
+    .links {
+
+        font-size: 20px;
+
+    }
+
+    .stiky_links {
+        font-size: 20px;
+        visibility: visible;
+        
+    }
+
+    
+
+
+    /* ======================== Thems =================== */
+
+    .theme_continer {
+        height: 45px;
+    }
+
+    /* ======= Themes Hide or Show ======= */
+
+    .theme_show_hide {
+        height: 0px;
+        transition: 1s;
+        visibility: hidden;
+    }
+
+    .themes_title {
+        color: var(--text_color);
+        transition: 1s;
+        font-size: 18px;
+    }
+
+    /* ====== Toggle ====== */
+
+    .hide_title {
+        font-size: 1px;
+    }
+
+    .themes {
+        padding: 10px;
+        display: flex;
+    }
+
+    .theme_circles {
+        width: 28px;
+        height: 28px;
+
+    }
+
+    /* ====== Toggle ===== */
+
+    .circles_size {
+        width: 1px;
+        height: 1px;
+    }
+
+
+
+    /* ======================== Thems (End) =================== */
+
+    /*  =============== img Gloing Borders ====================*/
+    .my_img::before,
+    .my_img::after {
+        content: '';
+        position: absolute;
+        top: -5px;
+        left: -3px;
+        background-size: 400%;
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        z-index: 2000000;
+        z-index: -1;
+        animation: anim 20s linear infinite;
+    }
+
+    .my_img::after {
+        filter: blur(20px);
+    }
+
+    @keyframes anim {
+        0% {
+            background-position: 0 0;
+        }
+
+        50% {
+            background-position: 300% 0;
+        }
+
+        100% {
+            background-position: 0 0;
+        }
+    }
+
+    /*  =============== img Gloing Borders ====================*/
+
+    /* .content:hover {
+    padding-right: 300px;
+} */
+    /* ===== on click ====== */
+    .padding_content {
+        padding-right: 150px;
+    }
+
+    .greeting {
+        color: var(--gretting_color);
+        font-family: 'Source Sans Pro', sans-serif;
+        position: absolute;
+        left: 40%;
+        top: 50px;
+        text-align: left;
+        font-weight: 400;
+        z-index: -1;
+        transition: 1s;
+        opacity: 0;
+    }
+
+    /* ======================== SVG =================== */
+    .logo1 {
+        position: absolute;
+        top: 55px;
+        left: 5px;
+        width: 150px;
+        height: 150px;
+        /* animation: fill 0.9s ease forwards 4.5s; */
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .logo1 {
+        display: inline;
+    }
+
+    .logo1 path:nth-child(2) {
+        stroke-dasharray: 209px;
+        stroke-dashoffset: 209px;
+        animation: line_anime 8s ease infinite;
+        stroke: greenyellow;
+    }
+
+    .logo1 path:nth-child(3) {
+        stroke-dasharray: 196px;
+        stroke-dashoffset: 196px;
+        animation: line_anime 7s ease infinite 0.3s;
+        stroke: rgb(0, 255, 234);
+    }
+
+    .logo1 path:nth-child(4) {
+        stroke-dasharray: 115px;
+        stroke-dashoffset: 115px;
+        animation: line_anime 6s ease infinite 0.6s;
+        stroke: rgb(255, 0, 0);
+    }
+
+    .logo1 path:nth-child(5) {
+        stroke-dasharray: 196px;
+        stroke-dashoffset: 196px;
+        animation: line_anime 5s ease infinite 0.9s;
+        stroke: rgb(212, 0, 255);
+    }
+
+    .logo1 path:nth-child(6) {
+        stroke-dasharray: 210px;
+        stroke-dashoffset: 210px;
+        animation: line_anime 4s ease infinite 1.2s;
+        stroke: rgb(255, 251, 0);
+    }
+
+    .logo1 path:nth-child(7) {
+        stroke-dasharray: 239px;
+        stroke-dashoffset: 0px;
+        animation: ff 2s ease infinite 1s;
+        stroke: rgb(141, 130, 130);
+    }
+
+    .logo1 path:nth-child(8) {
+        stroke-dasharray: 196px;
+        stroke-dashoffset: 0px;
+        animation: ff 2s ease infinite 1s;
+        stroke: rgb(141, 130, 130);
+    }
+
+    .logo1 path:nth-child(9) {
+        stroke-dasharray: 231px;
+        stroke-dashoffset: 0px;
+        animation: ff 2s ease infinite 1s;
+        stroke: rgb(141, 130, 130);
+    }
+
+    .logo1 path:nth-child(10) {
+        stroke-dasharray: 141px;
+        stroke-dashoffset: 0px;
+        animation: ff 2s ease infinite 1s;
+        stroke: rgb(141, 130, 130);
+    }
+
+    .logo1 path:nth-child(11) {
+        stroke-dasharray: 179px;
+        stroke-dashoffset: 0px;
+        animation: ff 1.5s ease infinite 1s;
+        stroke: rgb(141, 130, 130);
+    }
+
+    .logo1 path:nth-child(12) {
+        stroke-dasharray: 179px;
+        stroke-dashoffset: 0px;
+        animation: ff 2s ease infinite 1s;
+        stroke: rgb(141, 130, 130);
+        /* stroke: rgb(141, 130, 130); */
+    }
+
+
+
+
+    @keyframes line_anime {
+        to {
+            stroke-dashoffset: 0;
+        }
+    }
+
+    @keyframes fill {
+        from {
+            fill: transparent;
+        }
+
+        to {
+            fill: rgb(255, 255, 255);
+        }
+    }
+
+    /* ========================= SVG (End) ============ */
+    .section__title--intro {
+        font-weight: var(--fw-reg);
+        font-size: 45px;
+    }
+
+    .section__title--intro strong {
+        display: block;
+    }
+
+    /* .content:hover .greeting {
+    left: 500px;
+    opacity: 1;
+} */
+
+    .move_greeting {
+        left: 60%;
+        opacity: 1;
+    }
+
+    .line {
+        position: absolute;
+        left: 40%;
+        top: 270px;
+        width: 150px;
+        height: 30px;
+        text-align: end;
+        border-radius: 3px;
+        color: var(--line_text_color);
+        font-size: 15px;
+        background-color: var(--line_color);
+        opacity: 0;
+        transition: 1s;
+        z-index: -1;
+        padding: 5px;
+    }
+
+    /* .content:hover .line {
+    width: 700px;
+    left: 80px;
+    opacity: 1;
+} */
+
+    /* ================= Power-Off Btn ============ */
+
+    .btn_div {
+        display: flex;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+
+    label {
+        margin: -30px auto 35px;
+    }
+
+    label .btn {
+        position: relative;
+        margin: auto;
+        display: block;
+        width: 40px;
+        height: 40px;
+        background: #1b1b1b;
+        border-radius: 50%;
+        box-shadow: 0 3px 4px rgba(0, 0, 0, 1),
+            inset 0 -2px 5px rgba(0, 0, 0, 1),
+            inset 0 2px 2px rgba(255, 255, 522, 0.5),
+            0 0 0 2px #000,
+            0 0 0 5px #0c0c0c,
+            0 0 0 5.5px #080808;
+        cursor: pointer;
+    }
+
+    label input[type="checkbox"]:checked~.btn {
+        box-shadow: 0 0 0 rgba(0, 0, 0, 1),
+            inset 0 -2px 5px rgba(0, 0, 0, 1),
+            inset 0 1px 1px rgba(255, 255, 522, 0.1),
+            0 0 0 2px #000,
+            0 0 0 5px #0c0c0c,
+            0 0 0 8px #fff;
+    }
+
+    label input[type="checkbox"] {
+        -webkit-appearance: none;
+    }
+
+    label .fas {
+        position: relative;
+        border-radius: 155px;
+        font-size: 1.5em;
+        margin-top: 23%;
+        color: #303030;
+    }
+
+    label input[type="checkbox"]:checked~.btn .fas {
+        color: #fff;
+        text-shadow: 0 0 15px rgb(158, 158, 158);
+    }
+
+
+
+    /* ================= Power-Off Btn (END) ============ */
+
+    .expand_line {
+        width: 80%;
+        left: 10%;
+        opacity: 1;
+    }
+
+
+
+}
+
+
+/* ************************ Mobile (Iphone SE) ( 510px - 310px) ************************** */
+
+@media (max-width: 510px) {
+
+    .container {
+        position: relative;
+        max-width: 1000px;
+        margin: 0px auto 10px;
+        padding: 5px 5px 0;
+        transition: 0.3s;
+        border-radius: 5px;
+        height: 900px;
+        box-shadow: 1px 1px 2px white;
+            
+    }
+
+    /* ========================= Nav ==================== */
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        background-color: var(--body_background);
+        border-radius: 5px;
+        height: 30px;
+        width: 100%;
+        align-items: center;
+        transition: 1s;
+        box-shadow: 1px 1px 2px white,
+            -1px -1px 2px white;
+    }
+
+    .shrink_nav {
+        width: 100%;
+    }
+
+    .sticky_dots_style {
+        width: 20px;
+        height: 20px;
+        
+    }
+
+    
+
+    /* ========================== Humberger ======================== */
+
+    /* .humberger {
+        margin: 0px 12px;
+        width: 22px;
+        height: 22px;
+        background: url(https://image.flaticon.com/icons/svg/527/527462.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: 0.5s;
+        cursor: pointer;
+        display: inline-flex;
+    } */
+
+
+    /* ========================= Themes =========================== */
+
+    .theme_continer {
+        height: 40px;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    /* ======= Themes Hide or Show ======= */
+
+    .theme_show_hide {
+        height: 40px;
+        transition: 1s;
+        visibility: visible;
+    }
+
+    .themes_title {
+        color: var(--text_color);
+        transition: 1s;
+        font-size: 15px;
+    }
+
+    /* ====== Toggle ====== */
+
+    .theme_circles {
+        width: 20px;
+        height: 20px;
+    }
+
+    /* ====== Toggle ===== */
+
+    .circles_size {
+        width: 20px;
+        height: 20px;
+    }
+
+    /* =========================== Nav Links ===================== */
+
+    /* ========================== Humberger ======================== */
+
+    .humberger_div {
+        display: inline-flex;
+    }
+
+    #menu {
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        opacity: 0;
+        z-index: 10000000000000000000000;
+    }
+
+    .label,
+    .label::before,
+    .label::after {
+        position: absolute;
+        right: 0;
+        width: 24px;
+        height: 4px;
+        border-radius: 5px;
+        background-color: #fcac00;
+        transition: 0.5s;
+        z-index: 100;
+        pointer-events: none;
+    }
+
+    .label {
+        cursor: pointer;
+        top: 43px;
+        left: 90%;
+        z-index: 1000000;
+    }
+
+    .label::before {
+        content: "";
+        transform: translateY(-10px);
+        z-index: 1000000;
+    }
+
+    .label::after {
+        content: "";
+        transform: translateY(10px);
+        z-index: 1000000;
+    }
+
+    #menu:checked+.label {
+        width: 0px;
+    }
+
+    #menu:checked+.label::before {
+        transform: rotate(45deg) translate(0px);
+    }
+
+    #menu:checked+.label::after {
+        transform: rotate(-45deg) translate(0px);
+    }
+
+    /* ========================== Humberger (END) ======================== */
+
+    .nav_links {
+        position: absolute;
+        background-color: rgba(255, 255, 222, 0.1);
+        top: 90px;
+        left: 60%;
+        right: 10px;
+        z-index: 100000;
+        transform: translateX(120%);
+        display: inline-flex;
+        transition: 0.5s;
+        box-shadow: 1px 1px 1px white,
+            -1px -1px 1px white;
+        padding: 10px;
+    }
+
+    .nav__list {
+        text-align: start;
+        display: flex;
+        height: 110px;
+        flex-direction: column;
+
+    }
+
+    .nav__link {
+        color: inherit;
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    .links ul li a:hover {
+        color: rgb(204, 146, 146);
+        transition: 0.3s;
+    }
+
+    .show_hide_linkks {
+        transform: translateX(50%);
+        transition: 0.5s;
+    }
+
+    .hide_links {
+        visibility: hidden;
+    }
+
+
+    .links {
+        display: none;
+    }
+
+    .stiky_links {
+    
+        display: none;
+    }
+
+    /* =========================== Dots ============================ */
+    .dot1:hover {
+        background: url(noooo);
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: 0.5s;
+        background-color: #ff3300;
+    }
+
+    .dot2:hover {
+        background: url(noooo);
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: 0.5s;
+        background-color: #f4f800;
+    }
+
+    .dot3:hover {
+        background: url(noooo);
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: 0.5s;
+        background-color: #f4f800;
+    }
+
+
+
+
+    /* ======== Orange & Yellow Dots animation ======== */
+
+    .dot2_back {
+        transform: rotateX(0deg);
+    }
+
+    .dot1_back {
+        transform: rotateY(0deg);
+    }
+
+
+    /* =========================== Content ======================= */
+
+    .content {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 10px 270px 1fr;
+        grid-template-areas:
+            "hi"
+            "lin"
+            "img";
+        position: relative;
+        margin: 50px auto;
+        width: 100%;
+        text-align: left;
+        z-index: 0;
+        transition: 1s;
+        height: 600px;
+    }
+
+    .greeting {
+        grid-area: hi;
+        color: var(--gretting_color);
+        font-family: 'Source Sans Pro', sans-serif;
+        left: 0px;
+        top: 0px;
+        margin-left: 15px;
+        text-align: left;
+        font-weight: 500;
+        z-index: 1;
+        transition: 1s;
+        opacity: 1;
+        z-index: 11;
+    }
+
+    .line {
+        grid-area: lin;
+        left: 0;
+        top: 200px;
+        margin-left: 15px;
+        text-align: center;
+        border-radius: 3px;
+        color: var(--line_text_color);
+        font-size: 15px;
+        background-color: var(--line_color);
+        opacity: 1;
+        transition: 1s;
+        padding: 5px;
+        z-index: 11;
+    }
+
+    .my_img img {
+        width: 250px;
+
+    }
+
+    .my_img {
+        grid-area: img;
+        margin-left: 15px;
+        width: 255px;
+    }
+
+    .padding_content {
+        padding-right: 0px;
+    }
+
+    .expand_line {
+        width: 150px;
+        left: 0;
+    }
+
+    /*  =============== img Gloing Borders ====================*/
+    .my_img::before,
+    .my_img::after {
+        content: '';
+        position: absolute;
+        top: -5px;
+        left: -3px;
+        background-size: 400%;
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        z-index: -1;
+        animation: anim 20s linear infinite;
+    }
+
+    .my_img::after {
+        filter: blur(20px);
+    }
+
+    @keyframes anim {
+        0% {
+            background-position: 0 0;
+        }
+
+        50% {
+            background-position: 300% 0;
+        }
+
+        100% {
+            background-position: 0 0;
+        }
+    }
+
+    .btn_container {
+        visibility: hidden;
+    }
+
+    /*  =============== img Gloing Borders ====================*/
+
+    .btn_div {
+        width: 0px;
+        height: 0px;
+        visibility: hidden;
+    }
+
+    /* =================================== About Me ===================================== */
+    /* =================================== About Me ===================================== */
+
+    .About_me_heading {
+        margin: 10px 0 20px 0;
+        font-size: 20px;
+    }
+
+    .About_me_heading {
+        font-size: 20px;
+    }
+
+    .about_me_content {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "im"
+            "designer"
+            "talk"
+            "talk2"
+            "img";
+        margin: 2px auto 2px auto;
+        max-width: 90%;
+        width: 90%;
+    }
+
+    .Iam {
+        grid-area: im;
+        padding-left: 0px;
+        font-size: 18px;
+    }
+
+    .Designer {
+        grid-column: 1 / 1;
+        position: relative;
+        grid-row: 2;
+        left: 0px;
+        width: 250px;
+        z-index: 0;
+        padding: 5px;
+        margin: 10px 0px;
+    }
+
+    .explination {
+        grid-area: talk;
+        padding-left: 0px;
+        font-size: 16px;
+    }
+
+    .explination_2 {
+        grid-area: talk2;
+        padding-left: 0px;
+        font-size: 16px;
+
+        margin-bottom: 20px;
+    }
+
+    .about_me_img img {
+        width: 220px;
+    }
+
+    .about_me_img {
+        grid-area: img;
+        justify-self: start;
+        padding: 0 0px 0 0;
+        z-index: 0;
+        height: 100%;
+    }
+
+    
+
+
+
+}

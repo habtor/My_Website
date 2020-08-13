@@ -1,0 +1,197 @@
+.footer {
+    width: 100%;
+    margin: 100px auto 0 auto;
+    border-top: 1px solid rgb(255, 255, 255);
+}
+
+.footer_background {
+    margin: auto;
+    /* background-color: rgb(78, 94, 63); */
+    justify-content: center;
+    max-width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.contact_heading {
+    text-align: center;
+    background: var(--body_background);
+    
+}
+
+
+/*  ============== icons =========== */
+
+.icons_grid {
+    background-color: var(--themes_container_background);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.icons {
+    display: flex;
+    padding: 25px;
+}
+
+.fab,
+.far {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.account_txt {
+    padding-left: 10px;
+    font-size: 18px;
+}
+
+.account_txt:hover a {
+    color: rgb(185, 185, 185);
+}
+
+.fa-github {
+    color: rgb(87, 87, 87);
+}
+
+.fa-twitter {
+    color: #55acee;
+}
+
+.fa-linkedin-in {
+    color: #0077B5;
+}
+
+.fa-envelope {
+    color: #dd4b39;
+}
+
+/* ================ Ack ================== */
+
+.ack_btn_container {
+    position: relative;
+    margin: auto;
+    width: 150px;
+}
+
+.aknoledgment {
+    width: 100%;
+    position: relative;
+    height: 60px;
+    background-color: rgb(88, 88, 87);
+}
+
+.ack_btn {
+    position: absolute;
+    height: 30px;
+    top: -16px;
+    width: 150px;
+    background-color: var(--body_background);
+    border-radius: 20px;
+    text-align: center;
+    padding: 3px 1px;
+    z-index: 1;
+    border: 1px solid;
+    color: var(--text_color);
+}
+
+.acks_paragraph {
+    padding: 20px;
+    text-align: center;
+    align-self: flex-end;
+    
+}
+
+.hide_ack {
+    height: 0;
+}
+
+.hide_ack_paragraph {
+    font-size: 0;
+    padding: 0px;
+}
+
+/* ====================== Mobile 800px ========================= */
+
+@media (max-width: 810px) {
+
+    .fab,
+    .far {
+        font-size: 18px;
+    }
+
+    .account_txt {
+        font-size: 15px;
+    }
+
+    .contact_heading {        
+        font-size: 25px;        
+    }
+
+    
+}
+
+/* ========================== Iphone SE ======================*/
+
+@media (max-width: 510px) {
+
+    .contact_heading {        
+        font-size: 18px;        
+    }
+
+    .name_subject {
+        display: inline;
+    }
+
+    .account_txt {
+        font-size: 13px;
+        padding-left: 3px;
+    }
+
+    .icons {
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .icons {        
+        padding: 5px;
+    }
+
+    .mail {
+        padding-bottom: 25px;
+    }
+
+
+    /*  ===============Ack========= */
+    .aknoledgment {       
+        height: 80px;
+    }
+
+    .acks_paragraph {
+        padding: 30px 0 0;
+        font-size: 14px;
+    }
+
+    .hide_ack {
+        height: 0;
+    }
+    
+    .hide_ack_paragraph {
+        font-size: 0;
+        padding: 0px;
+    }
+    
+
+}
+
+
+/* ================ 400px */
+
+@media (max-width: 400px) {
+    .icons_grid {
+        display: flex;
+        flex-direction: column;
+
+    }
+}

@@ -1,0 +1,174 @@
+.about_me_container {
+    width: 100%;
+    margin: 100px auto;
+    color: var(--text_color);
+    padding: 5px;
+}
+
+.about_me_container_background {
+    max-width: 1000px;
+    background-color: var(--container_backgound);
+    margin: auto;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px white,
+        -1px -1px 1px white;
+}
+
+.about_me_heading {
+    margin: auto;
+    width: 100%;
+    background-color: var(--themes_container_background);
+    text-align: center;
+    border-radius: 5px;
+}
+
+.about_me_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        "imag bio bio"
+        "web sec Ai";
+    margin: auto;
+    padding: 50px 50px;
+    column-gap: 25px;
+    row-gap: 25px;
+}
+
+.about_me_img {
+    grid-area: imag;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    text-align: center;
+    justify-self: center;
+    background-color: rgb(209, 158, 47);
+}
+
+.about_me_img img {
+    width: 185px;
+    border-radius: 50%;
+}
+
+.Bio {
+    grid-area: bio;
+    align-self: center;
+    color: goldenrod;text-align: justify;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* color: var(--text_color); */
+
+}
+
+.Bio p {
+    padding-top: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text_color);
+}
+
+.web {
+    grid-area: web;
+
+}
+
+.sec {
+    grid-area: sec;
+
+}
+
+.Ai {
+    grid-area: Ai;
+
+}
+
+.things_i_do {
+    background-color: rgba(87, 86, 86, 0.3);
+    border-radius: 5px;
+    padding: 15px;
+    border-bottom: 5px solid rgb(0, 0, 0);
+    transition: 0.5s;
+    text-align: justify;
+    /* animation: an 5.5s linear infinite; */
+    
+}
+
+.things_i_do h3 {
+    border-bottom: 5px solid rgb(36, 36, 36);
+    width: 70px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+/* .things_i_do:hover {    
+    border-bottom: 5px solid rgb(0, 0, 0);
+} */
+
+/* @keyframes an {
+    0% {
+        border-bottom: 5px solid var(--body_background);
+    }
+
+    50% {
+        border-bottom: 5px solid #ffffff;
+    }
+
+    100% {
+        border-bottom: 5px solid var(--body_background);
+    }
+} */
+
+/* --body_background: #000000;
+    --themes_container_background: #1b1b1b;
+    --container_backgound: #292929;
+    --text_color: #ffffff;
+    --line_text_color: #ffffff;
+    --gretting_color: white;
+    --line_color: #000000;
+    --habtor_strokes_color: white;
+    --section_heading: 32px;
+    --my_work_items_color: rgb(61, 61, 61); */
+
+
+/* ====================== Mobile 800px ========================= */
+
+@media (max-width: 810px) {
+    .about_me_heading {
+        font-size: 12px;
+    }
+
+    .about_me_grid {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "imag"
+            "bio"
+            "web"
+            "sec"
+            "Ai";
+    }
+
+    .Bio {
+        align-self: center;
+        text-align: center;
+        max-width: 500px;
+        margin: auto;
+    }
+
+    .things_i_do {
+        max-width: 300px;
+        margin: auto;
+    }
+}
+
+/* ========================== Iphone SE ======================*/
+
+@media (max-width: 510px) {
+    .about_me_img {        
+        width: 130px;
+        height: 130px;
+    }
+
+    .about_me_img img {
+        width: 115px;
+        border-radius: 50%;
+    }
+}

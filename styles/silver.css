@@ -1,0 +1,291 @@
+:root {
+    --body_background: #00d9ff;
+    --themes_container_background: #0096b1;
+    --container_backgound: #00434e;
+    --text_color: rgb(0, 0, 0);
+    --line_text_color: black;
+    --gretting_color: #ffffff;
+    --line_color: #00d9ff;
+    --habtor_strokes_color: rgb(0, 217, 255);
+    --my_work_items_color: rgb(48, 64, 68);
+}
+
+.container_background {
+    box-shadow: 1px 1px 1px rgb(0, 0, 0),
+        -1px -1px 1px rgb(0, 0, 0);
+}
+
+.nav {
+    box-shadow: 1px 1px 2px rgb(0, 0, 0),
+        -1px -1px 2px rgb(0, 0, 0);
+
+}
+
+.sticky_nav {
+    box-shadow: 1px 1px 2px rgb(0, 0, 0),
+        -1px -1px 2px rgb(0, 0, 0);
+}
+
+.my_img::before,
+.my_img::after {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -3px;
+    background: linear-gradient(45deg, #00d9ff, #414141, #009bb6);
+    background-size: 400%;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    z-index: 2000000;
+    z-index: -1;
+    animation: anim 20s linear infinite;
+}
+
+.my_img::after {
+    filter: blur(20px);
+}
+
+@keyframes anim {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 300% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.links ul li a:hover {
+    color: rgb(102, 102, 102);
+    transition: 0.3s;
+}
+
+label .btn {
+    position: relative;
+    margin: auto;
+    display: block;
+    background: #001a22;
+    border-radius: 50%;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 1),
+        inset 0 -2px 5px rgba(0, 0, 0, 1),
+        inset 0 2px 2px rgba(255, 255, 522, 0.5),
+        0 0 0 2px #000,
+        0 0 0 5px #0c0c0c,
+        0 0 0 5.5px #080808;
+}
+
+label input[type="checkbox"]:checked~.btn {
+    box-shadow: 0 0 0 rgba(0, 0, 0, 1),
+        inset 0 -2px 5px rgba(0, 0, 0, 1),
+        inset 0 1px 1px rgba(255, 255, 522, 0.1),
+        0 0 0 2px #000,
+        0 0 0 5px #0c0c0c,
+        0 0 0 8px var(--body_background);
+}
+
+label input[type="checkbox"]:checked~.btn .fas {
+    color: var(--body_background);
+    text-shadow: 0 0 10px rgb(27, 91, 102);
+}
+
+.nav__link a {
+    color: white;
+}
+
+/* ==== about me ===== */
+
+.container_background1 {
+    box-shadow: 1px 1px 1px rgb(0, 0, 0),
+        -1px -1px 1px rgb(0, 0, 0);
+}
+
+.about_me_nav {
+    box-shadow: 1px 1px 1px rgb(0, 0, 0),
+        -1px -1px 1px rgb(0, 0, 0);
+}
+
+/* contact me ============== */
+
+.contact_all_back_container {
+    box-shadow: 1px 1px 1px rgb(0, 0, 0),
+        -1px -1px 1px rgb(0, 0, 0);
+}
+
+/* ===================== Habtor part SVG ================*/
+
+.logo path:nth-child(7) {
+    stroke-dasharray: 239px;
+    stroke-dashoffset: 0px;
+    animation: ff 2s ease infinite 1s;
+    stroke: rgb(141, 130, 130);
+}
+
+.logo path:nth-child(8) {
+    stroke-dasharray: 196px;
+    stroke-dashoffset: 0px;
+    animation: ff 2s ease infinite 1s;
+    stroke: rgb(141, 130, 130);
+}
+
+.logo path:nth-child(9) {
+    stroke-dasharray: 231px;
+    stroke-dashoffset: 0px;
+    animation: ff 2s ease infinite 1s;
+    stroke: rgb(141, 130, 130);
+}
+
+.logo path:nth-child(10) {
+    stroke-dasharray: 141px;
+    stroke-dashoffset: 0px;
+    animation: ff 2s ease infinite 1s;
+    stroke: rgb(141, 130, 130);
+}
+
+.logo path:nth-child(11) {
+    stroke-dasharray: 179px;
+    stroke-dashoffset: 0px;
+    animation: ff 1.5s ease infinite 1s;
+    stroke: rgb(141, 130, 130);
+}
+
+.logo path:nth-child(12) {
+    stroke-dasharray: 179px;
+    stroke-dashoffset: 0px;
+    animation: ff 2s ease infinite 1s;
+    stroke: rgb(141, 130, 130);
+    /* stroke: rgb(141, 130, 130); */
+}
+
+/* ======= Habtor on 810px sereens (Logo1) ======= */
+
+.logo1 path:nth-child(7) {
+    stroke-dasharray: 239px;
+    stroke-dashoffset: 0px;
+    animation: ff 2s ease infinite 1s;
+    stroke: rgb(141, 130, 130);
+}
+
+.logo1 path:nth-child(8) {
+    stroke-dasharray: 196px;
+    stroke-dashoffset: 0px;
+    animation: ff 2s ease infinite 1s;
+    stroke: rgb(141, 130, 130);
+}
+
+.logo1 path:nth-child(9) {
+    stroke-dasharray: 231px;
+    stroke-dashoffset: 0px;
+    animation: ff 2s ease infinite 1s;
+    stroke: rgb(141, 130, 130);
+}
+
+.logo1 path:nth-child(10) {
+    stroke-dasharray: 141px;
+    stroke-dashoffset: 0px;
+    animation: ff 2s ease infinite 1s;
+    stroke: rgb(141, 130, 130);
+}
+
+.logo1 path:nth-child(11) {
+    stroke-dasharray: 179px;
+    stroke-dashoffset: 0px;
+    animation: ff 1.5s ease infinite 1s;
+    stroke: rgb(141, 130, 130);
+}
+
+.logo1 path:nth-child(12) {
+    stroke-dasharray: 179px;
+    stroke-dashoffset: 0px;
+    animation: ff 2s ease infinite 1s;
+    stroke: rgb(141, 130, 130);
+    /* stroke: rgb(141, 130, 130); */
+}
+
+/* ===================== Habtor part SVG (End) ================ */
+
+
+/* =========== My Work =================== */
+
+.my_work_background {
+
+    box-shadow: 1px 1px 1px rgb(0, 0, 0),
+        -1px -1px 1px rgb(0, 0, 0);
+}
+
+/* ================= About me ================== */
+
+.about_me_container_background {
+    box-shadow: 1px 1px 1px rgb(0, 0, 0),
+        -1px -1px 1px rgb(0, 0, 0);
+
+}
+
+.Bio {
+    color: var(--body_background);
+}
+
+.Bio p {
+    color: rgb(255, 255, 255);
+}
+
+.about_me_img {
+    background-color: var(--body_background);
+}
+
+
+.things_i_do {
+    background-color: rgba(159, 241, 255, 0.171);
+    border-bottom: 5px solid var(--body_background);
+}
+
+.things_i_do h3 {
+    border-bottom: 5px solid var(--body_background);
+    color: white;
+}
+
+.things_i_do p {
+    color: white;
+}
+
+/* ===================== Contact me =============== */
+
+.contact_me_background_container {
+    box-shadow: 1px 1px 1px rgb(0, 0, 0),
+        -1px -1px 1px rgb(0, 0, 0);
+}
+
+.contact_heading {
+    color: black;
+}
+
+.contact_form_container {
+    background-color: var(--themes_container_background);
+    box-shadow: 1px 1px 1px rgb(88, 88, 88),
+        -1px -1px 1px rgb(99, 99, 99);
+}
+
+.inputs,
+textarea {
+    border: 1px solid rgb(0, 0, 0);
+    color: black;
+    background-color: rgb(235, 235, 235);
+}
+
+
+/*  ================ Contact (Fo0ter) ================ */
+.footer {
+    border-top: 1px solid rgb(0, 0, 0);
+}
+
+
+.fa-github {
+    color: rgb(0, 0, 0);
+}
+
+.account_txt:hover a {
+    color: rgb(68, 68, 68);
+}
