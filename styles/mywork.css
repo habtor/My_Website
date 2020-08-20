@@ -158,6 +158,11 @@
     
 }
 
+.malware {
+    margin: auto;
+    margin-right: 40px;
+}
+
 #liknss:hover {
     color: rgb(112, 112, 112);
 }
