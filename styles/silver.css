@@ -117,6 +117,22 @@ label input[type="checkbox"]:checked~.btn .fas {
 
 /* ===================== Habtor part SVG ================*/
 
+.logo path:nth-child(2) {
+    stroke: hsl(189, 74%, 52%)
+}
+.logo path:nth-child(3) {
+    stroke: hsl(189, 74%, 52%)
+}
+.logo path:nth-child(4) {
+    stroke: hsl(189, 74%, 52%)
+}
+.logo path:nth-child(5) {
+    stroke: hsl(189, 74%, 52%)
+}
+.logo path:nth-child(6) {
+    stroke: hsl(189, 74%, 52%)
+}
+
 .logo path:nth-child(7) {
     stroke-dasharray: 239px;
     stroke-dashoffset: 0px;
@@ -161,7 +177,21 @@ label input[type="checkbox"]:checked~.btn .fas {
 }
 
 /* ======= Habtor on 810px sereens (Logo1) ======= */
-
+.logo1 path:nth-child(2) {
+    stroke: hsl(189, 74%, 52%)
+}
+.logo1 path:nth-child(3) {
+    stroke: hsl(189, 74%, 52%)
+}
+.logo1 path:nth-child(4) {
+    stroke: hsl(189, 74%, 52%)
+}
+.logo1 path:nth-child(5) {
+    stroke: hsl(189, 74%, 52%)
+}
+.logo1 path:nth-child(6) {
+    stroke: hsl(189, 74%, 52%)
+}
 .logo1 path:nth-child(7) {
     stroke-dasharray: 239px;
     stroke-dashoffset: 0px;
